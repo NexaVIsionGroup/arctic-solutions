@@ -8,11 +8,7 @@ export const revalidate = 60;
 export default async function ArcticHomePage() {
   const heroData = await client.fetch(heroQuery).catch(() => null);
 
-  const vanImg = resolveArcticImage(
-    heroData?.vanImage,
-    "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
-    "Arctic Solutions service van"
-  );
+  const vanImg = resolveArcticImage(heroData?.vanImage, "", "Arctic Solutions service van");
 
   const heroImg = resolveArcticImage(heroData?.heroImage, "", "");
 

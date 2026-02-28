@@ -69,7 +69,7 @@ export default function Hero({
   emergencyBadgeText = "24/7 Emergency Service",
   heroImageSrc,
   yetiImageSrc,
-  vanImageSrc = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80",
+  vanImageSrc,
   buildingImageSrc,
   trustIndicators = [
     { label: "Response Time", value: "< 60 min" },
