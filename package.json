@@ -12,10 +12,11 @@
     "@sanity/image-url": "^2.0.3",
     "framer-motion": "^12.34.3",
     "next": "14.2.21",
-    "next-sanity": "^12.1.0",
+    "next-sanity": "^9.12.3",
     "react": "^18",
     "react-dom": "^18",
-    "sanity": "^5.12.0"
+    "sanity": "^5.12.0",
+    "styled-components": "^6.3.11"
   },
   "devDependencies": {
     "@types/node": "^20",
