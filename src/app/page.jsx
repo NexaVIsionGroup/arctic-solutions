@@ -30,9 +30,9 @@ const ARCTIC = {
     glassBorder: "rgba(0, 180, 216, 0.15)",
     glassHover: "rgba(0, 119, 182, 0.2)",
     // Text
-    textPrimary: "#F0F8FF",
-    textSecondary: "rgba(144, 224, 239, 0.8)",
-    textMuted: "rgba(144, 224, 239, 0.5)",
+    textPrimary: "#FFFFFF",
+    textSecondary: "rgba(220, 240, 255, 1.0)",
+    textMuted: "rgba(200, 225, 255, 0.78)",
   },
   fonts: {
     display: "'Outfit', sans-serif",
