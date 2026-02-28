@@ -10,13 +10,16 @@
   "dependencies": {
     "@sanity/icons": "^3.7.4",
     "@sanity/image-url": "^2.0.3",
+    "autoprefixer": "^10.4.27",
     "framer-motion": "^12.34.3",
     "next": "14.2.21",
     "next-sanity": "^9.12.3",
+    "postcss": "^8.5.6",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^5.12.0",
-    "styled-components": "^6.3.11"
+    "styled-components": "^6.3.11",
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
     "@types/node": "^20",

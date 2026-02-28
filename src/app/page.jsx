@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef, useCallback, createContext, useContext } from "react";
+import Hero from "./components/Hero";
 
 // ============================================================================
 // ARCTIC SOLUTIONS — BATCH 1: DESIGN SYSTEM + PARTICLE ENGINE + LAYOUT SHELL
@@ -1171,111 +1172,8 @@ export default function ArcticSolutionsBatch1() {
       >
         <Navigation />
 
-        {/* === HERO PLACEHOLDER (Batch 2) === */}
-        <section
-          style={{
-            minHeight: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-            padding: "120px 20px 60px",
-            overflow: "hidden",
-          }}
-        >
-          <IceParticleCanvas density={50} speed={0.35} />
-
-          <div style={{ position: "relative", zIndex: 5, textAlign: "center", maxWidth: "700px" }}>
-            <EmergencyBadge style={{ marginBottom: "24px" }} />
-
-            <h1
-              style={{
-                fontFamily: ARCTIC.fonts.display,
-                fontWeight: 900,
-                fontSize: "clamp(32px, 7vw, 64px)",
-                color: ARCTIC.colors.white,
-                lineHeight: 1.05,
-                letterSpacing: "-0.02em",
-                marginBottom: "16px",
-              }}
-            >
-              Commercial Refrigeration{" "}
-              <span
-                style={{
-                  background: `linear-gradient(135deg, ${ARCTIC.colors.primary}, ${ARCTIC.colors.secondary})`,
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                That Never Quits
-              </span>
-            </h1>
-
-            <p
-              style={{
-                fontFamily: ARCTIC.fonts.body,
-                fontSize: "clamp(16px, 2.5vw, 20px)",
-                color: ARCTIC.colors.textSecondary,
-                lineHeight: 1.6,
-                marginBottom: "32px",
-                maxWidth: "560px",
-                marginLeft: "auto",
-                marginRight: "auto",
-              }}
-            >
-              Walk-in coolers. Reach-ins. Ice machines. Rooftop units. 24/7
-              emergency service across Upstate South Carolina.
-            </p>
-
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "12px",
-                justifyContent: "center",
-              }}
-            >
-              <ClickToCall variant="emergency" size="lg" pulse />
-              <a
-                href="#quote"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "16px 32px",
-                  fontFamily: ARCTIC.fonts.display,
-                  fontWeight: 700,
-                  fontSize: "18px",
-                  color: ARCTIC.colors.secondary,
-                  background: "rgba(0, 180, 216, 0.08)",
-                  border: "1px solid rgba(0, 180, 216, 0.25)",
-                  borderRadius: "12px",
-                  textDecoration: "none",
-                  transition: "all 0.25s ease",
-                  letterSpacing: "0.02em",
-                }}
-              >
-                Request a Quote
-              </a>
-            </div>
-          </div>
-
-          {/* Gradient fade at bottom */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              right: 0,
-              height: "120px",
-              background: `linear-gradient(to top, ${ARCTIC.colors.navyDeep}, transparent)`,
-              zIndex: 3,
-              pointerEvents: "none",
-            }}
-          />
-        </section>
+        {/* === HERO (Batch 2) === */}
+        <Hero />
 
         {/* === COMPONENT SHOWCASE (demo of Batch 1 pieces) === */}
         <section style={{ padding: "80px 20px", maxWidth: "1200px", margin: "0 auto" }}>
