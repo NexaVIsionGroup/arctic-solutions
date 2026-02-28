@@ -8,9 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/icons": "^3.7.4",
+    "@sanity/image-url": "^2.0.3",
+    "framer-motion": "^12.34.3",
     "next": "14.2.21",
+    "next-sanity": "^12.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sanity": "^5.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",
